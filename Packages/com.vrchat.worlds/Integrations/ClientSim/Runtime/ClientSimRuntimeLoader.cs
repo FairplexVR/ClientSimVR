@@ -80,6 +80,7 @@ namespace VRC.SDK3.ClientSim
             return 
                 settings.enableClientSim &&
                 Application.isPlaying;
+                
         }
 
         // Start client sim with the given settings.
@@ -97,7 +98,8 @@ namespace VRC.SDK3.ClientSim
             DestroyEditorOnly(settings);
 
             ClientSimMain.CreateInstance(settings, eventDispatcher);
-
+            //ClientSimSteamVRSetup.InitializeXRSettings();
+            
             // TODO: Below is disabled for now because the rest of the ClientSim initialization code doesn't work if it's called with a delay.
             // Currently, not loading RemoteConfig will not cause any issues, but it may in the future, so this is left in as a reminder.
 
