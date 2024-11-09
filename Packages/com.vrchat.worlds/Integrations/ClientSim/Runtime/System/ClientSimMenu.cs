@@ -152,7 +152,7 @@ namespace VRC.SDK3.ClientSim
         {
             SetUIOverlayMaterial();
             
-            bool shouldShowMenu = true;
+            bool shouldShowMenu = false;
             if (checkValidSettingsHook?.Invoke() == false)
             {
                 // Force open the ClientSim settings window.
